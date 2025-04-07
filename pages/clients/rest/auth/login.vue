@@ -18,7 +18,7 @@
             <p>When a user logs in, noonjs verifies the provided credentials against the stored hashed password. If authentication
                 is successful, a JWT access token is generated, allowing secure API interactions.</p>
             <my-shiki lang="json" code='{
-  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+  "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
 }' />
             <span class="hint">The generated access token should be included in the authorization header for subsequent requests.</span>
         </section>

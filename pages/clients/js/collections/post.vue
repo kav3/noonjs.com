@@ -65,7 +65,7 @@ console.log(todo);
 
             <my-shiki code='import Client from "noonjs";
 const token = { access: "eyJ0eXBiOiJ3V1QiaCJhbGciOiJIUzI1..." }; // JWT token
-const client = new Client("http://localhost:3000", { token }";
+const client = new Client("http://localhost:3000", { token });
 const todo = await client.collection("todos").post({
     "title": "New Task",
     "priority": "high"

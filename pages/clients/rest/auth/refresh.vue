@@ -15,6 +15,7 @@
             <h2>non-browser</h2>
             <p>In this case, the refresh token is included in the request body. If the provided refresh token is valid, a new access token is generated and returned in the response.</p>
             <my-shiki lang="json" code='POST /auth/refresh 
+            
 {
     "refresh": "eyJhbGciOiJIUzI1NiI..."
 }

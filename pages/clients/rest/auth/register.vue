@@ -15,7 +15,7 @@
 }' />
         </section>
 
-        <section>
+        <section id="hash">
 
             <h3>Password Hashing</h3>
             <p>In noonjs, password hashing is automatically handled when the corresponding field's type is set to <span

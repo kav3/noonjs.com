@@ -119,7 +119,7 @@ svg {
 }
 
 .tag.important {
-  @apply bg-red-200 text-red-800 dark:bg-red-950 dark:text-red-200
+  @apply bg-red-200 text-red-800 dark:bg-red-900 dark:text-red-200
 }
 
 section {
