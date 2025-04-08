@@ -1,4 +1,16 @@
 <script setup lang="ts">
+const title = 'Making APIs So Easy, Even Your Dog 🐶 Could Do It'
+const description = 'Instant CRUD with authentication and real-time MongoDB, all from a single file.'
+useHead({
+    title
+})
+useSeoMeta({
+    title,
+    description,
+    ogTitle: title,
+    ogDescription: description,
+    ogImage: 'https://noonjs.com/img.jpeg'
+})
 const samples = ref(["Minimal", "Auth", "CRUD", "Permissions", "Live"])
 const sample = ref(samples.value[0].toLocaleLowerCase())
 const { $color } = useNuxtApp()
@@ -17,7 +29,7 @@ const lang = computed(() => ext(file.value))
     <span class="flex flex-col gap-3">
         <span class="flex flex-col md:flex-row gap-10 items-center">
             <span class="flex flex-col">
-                <h1>Making APIs So Easy, Even Your Dog 🐶 Could Do It</h1>
+                <h1>{{ title }}</h1>
                 <h2>Instant CRUD with authentication and real-time MongoDB, all from a <nuxt-link to="/config">single
                         file</nuxt-link>.</h2>
 

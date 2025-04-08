@@ -1,0 +1,35 @@
+<script setup lang="ts">
+useHead({
+    title: 'Limiter Config'
+})
+</script>
+
+<template>
+    <span class="flex flex-col gap-2">
+        <section>
+            <h1>Limiter</h1>
+            <h2>express-rate-limit</h2>
+            <p>
+                In noonjs, request rate limiting is handled using the <span class="tag">express-rate-limit</span>
+                middleware to prevent abuse and ensure fair API usage. The configuration can be set through <span
+                    class="tag">config.json</span> or environment variables. The <span class="tag">window</span> option
+                defines the time window in milliseconds during which requests are counted, and <span
+                    class="tag">limit</span> specifies the maximum number of allowed requests within that window.
+            </p>
+            <my-shiki lang="json" code='{
+...
+    "window": 60000,
+    "limit": 100
+...
+}' />
+        </section>
+
+        <section class="info">
+            <h4>Environment variables</h4>
+            <p>Alternatively, environment variables like <span class="tag">WINDOW=60000</span> and <span
+                    class="tag">LIMIT=100</span> achieve the same result. noonjs prioritizes <span
+                    class="tag important">environment variables</span> over config.json, and if neither is set, adefault
+                limit is applied.</p>
+        </section>
+    </span>
+</template>

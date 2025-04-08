@@ -1,6 +1,14 @@
 <script setup lang="ts">
 const { $color } = useNuxtApp()
-
+const { public: { uri } } = useRuntimeConfig()
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: uri + useRoute().path,
+    },
+  ]
+})
 const sunrise = ref(false)
 onMounted(() => {
   sunrise.value = true
@@ -12,15 +20,16 @@ onMounted(() => {
     <span
       class="flex w-full h-40 bg-gradient-to-b from-sky-800 to-yellow-100 dark:from-zinc-950 dark:to-sky-900 items-end">
       <span class="flex w-full z-10 justify-between bg-white/40 dark:bg-black/40">
-        <nav class="flex mx-auto w-11/12 justify-between">
+        <nav class="flex w-full md:mx-auto mx-1 md:mx-0 md:w-11/12 justify-between">
 
-          <nuxt-link to="/" class="flex items-center gap-1">
+          <nuxt-link to="/" class="flex items-center gap-0.5 md:gap-1">
             <icon-sun class="size-7" />
             <span class="flex text-2xl font-bold -mt-2">noonjs</span>
-            <span class="border px-1 border-black dark:border-white rounded-md text-xs font-bold ms-2">v0.1</span>
+            <span class="hidden md:flex border px-1 border-black dark:border-white rounded-md text-xs font-bold ms-2">v0.1</span>
           </nuxt-link>
 
           <span class="flex">
+            <nuxt-link to="/config" class="link">Config</nuxt-link>
             <nuxt-link to="/clients" class="link">Clients</nuxt-link>
             <nuxt-link to="/blog" class="link">Blog</nuxt-link>
             <client-only>
@@ -99,7 +108,7 @@ svg {
 }
 
 .link {
-  @apply flex px-1.5 py-1 m-2 items-center gap-1 rounded-full hover:bg-yellow-200 dark:hover:bg-sky-950
+  @apply flex py-1 px-1 mx-1 my-2 items-center gap-1 rounded-full hover:bg-yellow-200 dark:hover:bg-sky-950
 }
 
 .btn {
@@ -147,6 +156,6 @@ section.info h4 {
 }
 
 ul {
-  @apply list-disc ps-4
+  @apply list-disc ps-2 md:ps-4
 }
 </style>

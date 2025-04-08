@@ -1,6 +1,6 @@
 <template>
     <span class="flex gap-2">
-        <span class="flex flex-col w-1/5 md:w-1/6 p-4">
+        <span class="flex flex-col w-1/5 md:w-1/6 p-1 md:p-4">
             <ul>
                 <li>
                     <nuxt-link to="/clients/#js-client">JS</nuxt-link>
@@ -13,15 +13,8 @@
                                 <li><nuxt-link to="/clients/js/collections/patch">Patch()</nuxt-link></li>
                                 <li><nuxt-link to="/clients/js/collections/delete">Delete()</nuxt-link></li>
                                 <li><nuxt-link to="/clients/js/collections/count">Count()</nuxt-link></li>
+                                <li><nuxt-link to="/clients/js/collections/events">Events</nuxt-link></li>
 
-                            </ul>
-                        </li>
-                        <li>
-                            <nuxt-link to="/clients/js/events">Events</nuxt-link>
-                            <ul>
-                                <li><nuxt-link to="/clients/js/events/created">Created</nuxt-link></li>
-                                <li><nuxt-link to="/clients/js/events/patched">Patched</nuxt-link></li>
-                                <li><nuxt-link to="/clients/js/events/deleted">Deleted</nuxt-link></li>
                             </ul>
                         </li>
                         <li>
@@ -30,6 +23,7 @@
                                 <li><nuxt-link to="/clients/js/auth/register">Register</nuxt-link></li>
                                 <li><nuxt-link to="/clients/js/auth/login">Login</nuxt-link></li>
                                 <li><nuxt-link to="/clients/js/auth/logout">Logout</nuxt-link></li>
+                                <li><nuxt-link to="/clients/js/auth/events">Events</nuxt-link></li>
                             </ul>
                         </li>
                         <li><nuxt-link to="/clients/js/live">Live</nuxt-link></li>
@@ -65,10 +59,9 @@
 
         </span>
 
-        <span class="flex flex-1 flex-col p-4 gap-2">
+        <span class="flex flex-1 flex-col p-1 md:p-4 gap-2">
             <NuxtPage />
             <edit-this-page />
-
         </span>
     </span>
 </template>
