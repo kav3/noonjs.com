@@ -11,8 +11,24 @@
                 <li>
                     <nuxt-link to="/config/collections">Collections</nuxt-link>
                     <ul>
-                        <li><nuxt-link to="/config/collections/schema">Schema</nuxt-link></li>
-                        <li><nuxt-link to="/config/collections/permissions">Permissions</nuxt-link></li>
+                        <li>
+                            <nuxt-link to="/config/collections/schema">Schema</nuxt-link>
+                            <ul>
+                                <li><nuxt-link to="/config/collections/schema/number">Number</nuxt-link></li>
+                                <li><nuxt-link to="/config/collections/schema/hash">Hash</nuxt-link></li>
+                                <li><nuxt-link to="/config/collections/schema/default">Default</nuxt-link></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <nuxt-link to="/config/collections/permissions">Permissions</nuxt-link>
+                            <ul>
+                                <li><nuxt-link to="/config/collections/permissions/get">Get</nuxt-link></li>
+                                <li><nuxt-link to="/config/collections/permissions/post">Post</nuxt-link></li>
+                                <li><nuxt-link to="/config/collections/permissions/patch">Patch</nuxt-link></li>
+                                <li><nuxt-link to="/config/collections/permissions/delete">Delete</nuxt-link></li>
+                                <li><nuxt-link to="/config/collections/permissions/io">IO</nuxt-link></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
             </ul>
