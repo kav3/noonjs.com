@@ -131,6 +131,10 @@ svg {
   @apply bg-red-200 text-red-800 dark:bg-red-900 dark:text-red-200
 }
 
+.tag.info {
+  @apply text-sky-700 dark:text-sky-300
+}
+
 section {
   @apply flex flex-col gap-1
 }
