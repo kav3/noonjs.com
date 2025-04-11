@@ -34,10 +34,10 @@
 
         <section>
             <h3>How to use</h3>
-            <my-shiki code="import Client from 'noonjs';
+            <my-shiki code='import Client from "noonjs-client";
 
-const client = new Client({ server: 'https://localhost:5000' }); // my-noon-server
-" />
+const client = new Client({ server: "https://localhost:5000" }); // my-noon-server
+' />
             <p class="hint">
                 Server property is optional
             </p>
@@ -73,7 +73,8 @@ const client = new Client({ server: 'https://localhost:5000' }); // my-noon-serv
             <my-shiki code='const todo = await client.collection("todos").post({ title: "Buy milk" });' />
 
             <span>To fetch all todo items from the 'todos' collection using the noonjs client, use the following
-                command. Need more details on <nuxt-link to="/clients/js/crud/get/#paginated">pagination</nuxt-link>?</span>
+                command. Need more details on <nuxt-link
+                    to="/clients/js/crud/get/#paginated">pagination</nuxt-link>?</span>
 
             <my-shiki code='const todos = await client.collection("todos").get();' />
 

@@ -8,7 +8,7 @@
                 internal events within the client still function, allowing you to listen for and handle them without
                 relying on WebSocket communication.
             </p>
-            <my-shiki code='import Client from "noonjs";
+            <my-shiki code='import Client from "noonjs-client";
 const client = new Client("http://localhost:3000", { io: false }); // client without socket.io
 const todo = await client.collection("todos").post({
     "title": "New Task",

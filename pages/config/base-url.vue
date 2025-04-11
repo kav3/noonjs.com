@@ -15,9 +15,15 @@ useHead({
             </p>
             <my-shiki lang="json" code='{
 ...
-    "baseurl": "/api/v1",
+    "base": "/api/v1",
 ...
 }' />
+        </section>
+
+        <section>
+            <h2>Environment variables</h2>
+            <p>Alternatively, environment variables like <span class="tag">BASE=/api</span> achieve the same result.
+                noonjs prioritizes <span class="tag important">environment variables</span> over config.json.</p>
         </section>
 
         <section class="important">

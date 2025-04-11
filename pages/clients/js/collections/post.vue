@@ -63,7 +63,7 @@ console.log(todo);
                 <span class="tag">user</span> field is automatically set to the authenticated user's <span
                     class="tag">_id</span> from the JWT.</p>
 
-            <my-shiki code='import Client from "noonjs";
+            <my-shiki code='import Client from "noonjs-client";
 const token = { access: "eyJ0eXBiOiJ3V1QiaCJhbGciOiJIUzI1..." }; // JWT token
 const client = new Client("http://localhost:3000", { token });
 const todo = await client.collection("todos").post({
