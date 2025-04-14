@@ -38,6 +38,11 @@ useHead({
 }' />
         </section>
 
+        <section class="important">
+            <h4>Important</h4>
+            <p>The auth <nuxt-link to="/config/auth/collection">collection</nuxt-link> must include a <span class="tag important">permissions</span> field, which should be an array with a default value.</p>
+        </section>
+
         <section id="query-with-condition">
             <h3>Environment variables</h3>
             <p>For authentication, you can specify the environment variables for the primary secret, refresh secret,
@@ -45,11 +50,11 @@ useHead({
                     already included</span> in the
                 configuration file, you can pass them directly in the environment like this:</p>
 
-            <p><span class="tag">SECRET</span> sets the primary secret key for authentication.</p>
-            <p><span class="tag">REFRESH_SECRET</span> sets the secret key used for refreshing
+            <p><span class="tag">AUTH_SECRET</span> sets the primary secret key for authentication.</p>
+            <p><span class="tag">AUTH_REFRESH_SECRET</span> sets the secret key used for refreshing
                 tokens.</p>
-            <p><span class="tag">ACCESS</span> sets the expiration time for the access token in seconds</p>
-            <p><span class="tag">REFRESH</span> sets the expiration time for the refresh token in seconds</p>
+            <p><span class="tag">AUTH_ACCESS</span> sets the expiration time for the access token in seconds</p>
+            <p><span class="tag">AUTH_REFRESH</span> sets the expiration time for the refresh token in seconds</p>
 
             <p>These values are essential for managing token authentication and ensuring secure communication between
                 the client and server.</p>

@@ -1,13 +1,14 @@
 <script setup lang="ts">
+const title = "Limiter"
 useHead({
-    title: 'Limiter Config'
+    title
 })
 </script>
 
 <template>
     <span class="flex flex-col gap-2">
         <section>
-            <h1>Limiter</h1>
+            <h1>{{ title }}</h1>
             <h2>express-rate-limit</h2>
             <p>
                 In noonjs, request rate limiting is handled using the <span class="tag">express-rate-limit</span>
@@ -30,8 +31,8 @@ useHead({
 
         <section class="info">
             <h4>Environment variables</h4>
-            <p>Alternatively, environment variables like <span class="tag">WINDOW=60000</span> and <span
-                    class="tag">LIMIT=100</span> achieve the same result. noonjs prioritizes <span
+            <p>Alternatively, environment variables like <span class="tag">LIMITER_WINDOW=60000</span> and <span
+                    class="tag">LIMITER_LIMIT=100</span> achieve the same result. noonjs prioritizes <span
                     class="tag important">environment variables</span> over config.json. However, both parameters must
                 be provided; if either is missing, the limiter will be ignored.</p>
         </section>

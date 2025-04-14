@@ -35,7 +35,7 @@ const lang = computed(() => ext(file.value))
 
                 <span class="flex flex-col gap-2 mt-4">
                     <span class="flex">
-                        <nuxt-link to="/installation" class="btn primary">Get started</nuxt-link>
+                        <nuxt-link to="/docs/getting-started/installation" class="btn primary">Get started</nuxt-link>
                     </span>
                     <span class="flex">
                         <command text="npm create noon" />

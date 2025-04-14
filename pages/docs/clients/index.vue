@@ -28,7 +28,7 @@
                 To install the noonjs Client, use npm, yarn, or pnpm:
             </p>
             <span class="flex">
-                <command text="npm install noonjs" />
+                <command text="npm install noonjs-client" />
             </span>
         </section>
 

@@ -29,8 +29,7 @@ onMounted(() => {
           </nuxt-link>
 
           <span class="flex">
-            <nuxt-link to="/config" class="link">Config</nuxt-link>
-            <nuxt-link to="/clients" class="link">Clients</nuxt-link>
+            <nuxt-link to="/docs/getting-started" class="link">Docs</nuxt-link>
             <nuxt-link to="/blog" class="link">Blog</nuxt-link>
             <client-only>
               <button @click="() => $color = $color === 'dark' ? 'light' : 'dark'" type="button" class="link">
