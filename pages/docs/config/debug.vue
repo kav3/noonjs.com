@@ -10,7 +10,7 @@ useHead({
         <section>
             <h1>{{ title }}</h1>
             <p>
-                You can set debug levels like this: app:info, app:warn, app:error, or combine them as app:info,warn. Use app:* to enable all levels.
+                You can set debug levels like this <span class="tag info">app:info</span>, <span class="tag important">app:warn</span>, <span class="tag important">app:error</span>, or combine them as <span class="tag">app:info,warn</span>. Use <span class="tag">app:*</span> to enable all levels.
             </p>
             <my-shiki lang="json" code='{
 ...

@@ -17,10 +17,11 @@ useHead({
 
         <section id="count">
             <span>It retrieves the total number of documents in a collection.</span>
-            <my-shiki code='const total = await client.collection("todos").count();
+            <my-shiki code='const result = await client.collection("todos").count();
+console.log(result)
 
 // result
-// 2' />
+// { total: 2 }' />
         </section>
 
         <section id="query-with-condition">
@@ -29,7 +30,7 @@ useHead({
             <my-shiki code='const todos = await client.collection("todos").count({ q: { done: { $exists: true } } });
             
 // result
-// 1' />
+// { total: 1 }' />
         </section>
 
     </span>

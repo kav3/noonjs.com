@@ -18,7 +18,7 @@ useHead({
             <my-shiki lang="json" code='{
 ...
     "cors": {
-        "origin": "my-domain.com",
+        "origin": "https://my-domain.com",
         "credentials": true
     }
 ...
@@ -27,9 +27,22 @@ useHead({
 
         <section class="info">
             <h4>Environment variables</h4>
-            <p>Alternatively, environment variables like <span class="tag">CORS_ORIGIN=my-domain.com</span> and <span
-                    class="tag">CORS_CREDENTIALS=true</span> achieve the same result. noonjs prioritizes <span
-                    class="tag important">environment variables</span> over config.json.</p>
+            <p>Alternatively, environment variables like <span class="tag">CORS_ORIGIN=https://my-domain.com</span> and
+                <span class="tag">CORS_CREDENTIALS=true</span> achieve the same result. noonjs prioritizes <span
+                    class="tag important">environment variables</span> over config.json.
+            </p>
         </section>
+
+        <section class="important">
+            <h4>Important</h4>
+            <p>
+                If your frontend and backend are on different domains, subdomains, or ports, and you want to use
+                <span class="tag important">authentication</span>, make sure to define the <span class="tag important">CORS</span> origin and enable credentials in the <span
+                    class="tag important">config.json</span> or
+                <span class="tag important">environment variables</span>.
+            </p>
+        </section>
+
+
     </span>
 </template>

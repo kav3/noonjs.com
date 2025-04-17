@@ -2,7 +2,7 @@
     <span class="flex flex-col gap-2">
         <section>
             <h1>Collection Events</h1>
-            <p>In the <span class="tag">noonjs</span>, whenever a collection undergoes a change (create, update, or delete), an event is triggered, notifying all clients specified in <nuxt-link to="/config/collections">config.json</nuxt-link>.</p>
+            <p>In the <span class="tag">noonjs</span>, whenever a collection undergoes a change (create, update, or delete), an event is triggered, notifying all clients specified in <nuxt-link to="/docs/config/collections">config.json</nuxt-link>.</p>
         </section>
 
         <section class="info">

@@ -28,7 +28,7 @@ useHead({
         </section>
 
         <section>
-            <h4>Free Cloud MongoDb</h4>
+            <h2>Free Cloud MongoDb</h2>
             <p>You can sign up for a free account on <span class="tag">mongodb.com</span> and create multiple free clusters for your applications. Additionally, consider adding a server or your <span class="tag">IP</span> to the network to allow database access.</p>
         </section>
     </span>

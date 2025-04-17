@@ -28,7 +28,7 @@
         <section>
             <h2>Limiting Allowed Properties</h2>
             <p>You can control which properties users are allowed to include in the request body by defining <nuxt-link
-                    to="/config/permissions">permissions</nuxt-link> in
+                    to="/docs/config/permissions">permissions</nuxt-link> in
                 <span class="tag">config.json</span>. The <span class="tag">pick</span> option specifies a list of
                 allowed properties, and any property not listed will be ignored. The <span class="tag">omit</span>
                 option specifies a list of disallowed properties, and any property listed will be removed from the

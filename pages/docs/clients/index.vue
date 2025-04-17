@@ -1,3 +1,10 @@
+<script setup lang="ts">
+const title = "Clients"
+useHead({
+    title
+})
+</script>
+
 <template>
     <span class="flex flex-col gap-2">
 
@@ -28,7 +35,7 @@
                 To install the noonjs Client, use npm, yarn, or pnpm:
             </p>
             <span class="flex">
-                <command text="npm install noonjs-client" />
+                <command text="npm install noonjs-client@latest" />
             </span>
         </section>
 

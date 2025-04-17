@@ -95,7 +95,7 @@
                 The results can be sorted using the `sort` query parameter. For example, to sort the users by their
                 `createdAt` field in descending order, you can use:
             </p>
-            <my-shiki lang="json" code='GET /users?sort={createdAt:-1}' />
+            <my-shiki lang="json" code='GET /users?sort[createdAt]=-1' />
         </section>
 
         <section>

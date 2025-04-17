@@ -20,14 +20,27 @@ useHead({
 
             <h2>First Time</h2>
             <p>
-                Open a terminal and run the following command to create a new project. If you don't have a config.json,
+                Open a terminal and run the following command to create a new project. If you don't have a <nuxt-link
+                    to="/docs/config">config.json</nuxt-link>,
                 noonjs will generate a default one for you.
             </p>
 
             <span class="flex">
-                <command text="npm create noon" />
+                <command text="npm create noon@latest" />
             </span>
+        </section>
 
+        <section class="info">
+            <h4>Info</h4>
+            <p>
+                Replace your MongoDB connection string in the <span class="tag">.env</span> file or <span
+                    class="tag">config.json</span>. In production, use environment variables to securely pass it.
+
+
+            </p>
+        </section>
+
+        <section>
             <p>The default configuration should look like this.</p>
             <my-shiki lang="json" code='{
     "auth": {
@@ -108,7 +121,6 @@ useHead({
             <span class="flex">
                 <command text="npm run dev" />
             </span>
-
         </section>
 
         <section class="important">

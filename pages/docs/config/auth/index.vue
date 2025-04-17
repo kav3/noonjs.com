@@ -40,7 +40,19 @@ useHead({
 
         <section class="important">
             <h4>Important</h4>
-            <p>The auth <nuxt-link to="/config/auth/collection">collection</nuxt-link> must include a <span class="tag important">permissions</span> field, which should be an array with a default value.</p>
+            <p>
+                If your frontend and backend are on different domains, subdomains, or ports, and you want to use
+                <span class="tag important">authentication</span>, make sure to define the <span
+                    class="tag important">CORS</span> origin and enable credentials in the <span
+                    class="tag important">config.json</span> or
+                <span class="tag important">environment variables</span>. Want to learn more? Check out the <nuxt-link to="/docs/config/cors">CORS</nuxt-link> docs.
+            </p>
+        </section>
+
+        <section class="important">
+            <h4>Important</h4>
+            <p>The auth <nuxt-link to="/docs/config/auth/collection">collection</nuxt-link> must include a <span
+                    class="tag important">permissions</span> field, which should be an array with a default value.</p>
         </section>
 
         <section id="query-with-condition">

@@ -25,12 +25,12 @@ onMounted(() => {
           <nuxt-link to="/" class="flex items-center gap-0.5 md:gap-1">
             <icon-sun class="size-7" />
             <span class="flex text-2xl font-bold -mt-2">noonjs</span>
-            <span class="hidden md:flex border px-1 border-black dark:border-white rounded-md text-xs font-bold ms-2">v0.1</span>
+            <span class="hidden md:flex border px-1 border-black dark:border-white rounded-md text-xs font-bold ms-2">v0</span>
           </nuxt-link>
 
           <span class="flex">
             <nuxt-link to="/docs/getting-started" class="link">Docs</nuxt-link>
-            <nuxt-link to="/blog" class="link">Blog</nuxt-link>
+            <!-- <nuxt-link to="/blog" class="link">Blog</nuxt-link> -->
             <client-only>
               <button @click="() => $color = $color === 'dark' ? 'light' : 'dark'" type="button" class="link">
                 <icon-light v-if="$color === 'light'" />

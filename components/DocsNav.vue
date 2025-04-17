@@ -3,6 +3,6 @@
         <li><nuxt-link to="/docs/getting-started">Get Started</nuxt-link></li>
         <li><nuxt-link to="/docs/config">Config</nuxt-link></li>
         <li><nuxt-link to="/docs/clients">Clients</nuxt-link></li>
-        <li><nuxt-link to="/docs/examples">Examples</nuxt-link></li>
+        <!-- <li><nuxt-link to="/docs/examples">Examples</nuxt-link></li> -->
     </ul>
 </template>

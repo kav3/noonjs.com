@@ -22,7 +22,7 @@
 
         <section class="info">
             <h4>Info</h4>
-            <p>You can modify the <nuxt-link to="/config/auth">auth configuration</nuxt-link> in the <span class="tag">config.json</span> file
+            <p>You can modify the <nuxt-link to="/docs/config/auth">auth configuration</nuxt-link> in the <span class="tag">config.json</span> file
             </p>
         </section>
 

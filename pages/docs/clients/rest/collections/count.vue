@@ -6,17 +6,14 @@
                 This endpoint allows you to retrieve the total number of documents in a collection. It supports query
                 parameters for filtering, enabling you to count documents based on specific criteria.
             </p>
-            <my-shiki lang="json" code='GET /users/count' />
+            <my-shiki lang="json" code='GET /users/count
+            
+// result
+// {
+//      total: 2
+// }
+' />
             <span class="hint">For example, this endpoint returns the total number of users in the collection.</span>
-        </section>
-
-        <section class="important">
-            <h4>Important</h4>
-            <p>Ensure appropriate permissions when accessing this endpoint.</p>
-            <p>
-                Granting unrestricted access to the <span class="tag important">count</span> endpoint may expose
-                sensitive insights into the data. Always configure permissions accordingly.
-            </p>
         </section>
 
         <section>

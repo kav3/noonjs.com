@@ -17,20 +17,28 @@ const { $color } = useNuxtApp()
 const { data: files } = useFetch<any>(`/api/v1/how-to-use`, { params: { type: sample }, watch: [sample] })
 const file = ref("index.ts")
 function ext(name: string) {
+    if (!name)
+        return
     const [_, e] = name.split(".")
     return e
 }
 const { data: code } = useFetch(`/api/v1/how-to-use`, {
     params: { type: sample, file }, watch: [sample, file, $color]
 })
-const lang = computed(() => ext(file.value))
+const lang = computed(() => {
+    const l = ext(file.value) ?? "text"
+    if (!["js", "json", "ts"].includes(l))
+        return "text"
+    return l
+})
 </script>
 <template>
     <span class="flex flex-col gap-3">
         <span class="flex flex-col md:flex-row gap-10 items-center">
             <span class="flex flex-col">
                 <h1>{{ title }}</h1>
-                <h2>Instant CRUD with authentication and real-time MongoDB, all from a <nuxt-link to="/config">single
+                <h2>Instant CRUD with authentication and real-time MongoDB, all from a <nuxt-link
+                        to="/docs/config">single
                         file</nuxt-link>.</h2>
 
                 <span class="flex flex-col gap-2 mt-4">
@@ -38,7 +46,7 @@ const lang = computed(() => ext(file.value))
                         <nuxt-link to="/docs/getting-started/installation" class="btn primary">Get started</nuxt-link>
                     </span>
                     <span class="flex">
-                        <command text="npm create noon" />
+                        <command text="npm create noon@latest" />
                     </span>
                 </span>
 
@@ -46,7 +54,10 @@ const lang = computed(() => ext(file.value))
             <span class="flex md:w-2/3 flex-col p-4 dark:bg-zinc-900 border dark:border-zinc-600 rounded-lg gap-2">
 
                 <span class="flex gap-2">
-                    <button @click="sample = n.toLocaleLowerCase()" v-for="n in samples"
+                    <button @click="()=>{
+                        sample = n.toLocaleLowerCase();
+                        file = 'index.ts'
+                    }" v-for="n in samples"
                         :class="[{ 'bg-zinc-200 dark:bg-zinc-950': n.toLocaleLowerCase() === sample }]"
                         class="flex flex-1 justify-center py-0.5 px-2 rounded-md">{{ n
                         }}</button>

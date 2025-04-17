@@ -4,7 +4,7 @@
             <h1>Register()</h1>
             <h2>register(dto: any, signal?: AbortSignal)</h2>
             <p>
-                Registers a new user by creating an account with the provided credentials. Required fields should be configured in <nuxt-link to="/config/auth">config.json</nuxt-link>.
+                Registers a new user by creating an account with the provided credentials. Required fields should be configured in <nuxt-link to="/docs/config/auth">config.json</nuxt-link>.
             </p>
             <my-shiki
                 code='await client.auth().register({ username: "mike", password: "mikes-wife-birthday", email: "mike@example.com" })' />
