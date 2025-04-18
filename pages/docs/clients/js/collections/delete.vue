@@ -2,7 +2,7 @@
     <span class="flex flex-col gap-2">
         <section>
             <h1>Delete()</h1>
-            <h2>delete(_id)</h2>
+            <h2>delete(q?: {})</h2>
             <p>
                 The <span class="tag">delete</span> method allows removing a document from a collection by its unique
                 identifier <span class="tag">_id</span>.
@@ -11,7 +11,7 @@
                 the backend may enforce additional conditions, such as ensuring a user can only delete their own
                 records.
             </p>
-            <my-shiki code='const result = await client.collection("todos").delete("661d42f7b39a4b0012a67f12")' />
+            <my-shiki code='const result = await client.collection("todos").delete({ _id: "661d42f7b39a4b0012a67f12" })' />
         </section>
     </span>
 </template>

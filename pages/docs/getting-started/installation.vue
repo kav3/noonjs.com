@@ -126,7 +126,7 @@ useHead({
         <section class="important">
             <h4>Important</h4>
             <p>Be sure to change the <span class="tag important">secret</span> and <span
-                    class="tag important">refreshSecret</span> values before using in production.</p>
+                    class="tag important">refreshsecret</span> values before using in production.</p>
         </section>
     </span>
 </template>

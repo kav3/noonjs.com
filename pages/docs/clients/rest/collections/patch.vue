@@ -12,7 +12,7 @@
                 want to
                 update.
             </p>
-            <my-shiki lang="json" code='PATCH /todos/656f2b4e3f1a2b5d6c7e8f90
+            <my-shiki lang="text" code='PATCH /todos?q[_id]=656f2b4e3f1a2b5d6c7e8f90
             
 {
     "title": "Buy groceries and vegetables"

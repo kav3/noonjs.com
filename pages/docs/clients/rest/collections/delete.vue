@@ -10,7 +10,7 @@
                 To use this endpoint, send a DELETE request to <span class="tag">/todos/{id}</span> to remove a
                 specific resource.
             </p>
-            <my-shiki lang="json" code='DELETE /todos/656f2b4e3f1a2b5d6c7e8f90' />
+            <my-shiki lang="text" code='DELETE /todos?q[_id]=656f2b4e3f1a2b5d6c7e8f90' />
         </section>
 
         <section class="info">
