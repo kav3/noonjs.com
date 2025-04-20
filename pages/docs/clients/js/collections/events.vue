@@ -18,7 +18,7 @@
             <p>
                 The <span class="tag">created</span> event is triggered when a new document is added to the collection.
             </p>
-            <my-shiki code='client.collection("todos").on("created", (todo, io) => {
+            <my-shiki code='client.collection("todos").on("created", ({ todo, io }) => {
 // do something with todo
 })' />
         </section>
@@ -30,7 +30,7 @@
                 modified.
                 The received <span class="tag">todo</span> object contains the updated data.
             </p>
-            <my-shiki code='client.collection("todos").on("updated", (todo, io) => {
+            <my-shiki code='client.collection("todos").on("updated", ({ todo, io }) => {
 // do something with todo
 })' />
         </section>
@@ -41,7 +41,7 @@
                 The <span class="tag">deleted</span> event is triggered when a document is removed from the collection.
                 The <span class="tag">todo</span> object contains the removed document's details.
             </p>
-            <my-shiki code='client.collection("todos").on("deleted", (todo, io) => {
+            <my-shiki code='client.collection("todos").on("deleted", ({ todo, io }) => {
 })' />
         </section>
     </span>

@@ -30,7 +30,7 @@
         <section class="info">
             <h4>Suggestion</h4>
             <p>If you need to save the token for future use, retrieve it from the <span
-                    class="tag">client.auth().on("login")</span> event instead of
+                    class="tag">client.auth().on("login", token => { /* save token */ })</span> event instead of
                 this result.</p>
         </section>
 
