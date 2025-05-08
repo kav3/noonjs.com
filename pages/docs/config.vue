@@ -20,9 +20,10 @@
                         <li>
                             <nuxt-link to="/docs/config/collections/schema">Schema</nuxt-link>
                             <ul>
+                                <li><nuxt-link to="/docs/config/collections/schema/validation">Validation</nuxt-link></li>
+                                <li><nuxt-link to="/docs/config/collections/schema/default">Default</nuxt-link></li>
                                 <li><nuxt-link to="/docs/config/collections/schema/number">Number</nuxt-link></li>
                                 <li><nuxt-link to="/docs/config/collections/schema/hash">Hash</nuxt-link></li>
-                                <li><nuxt-link to="/docs/config/collections/schema/default">Default</nuxt-link></li>
                             </ul>
                         </li>
                         <li>
