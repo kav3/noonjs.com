@@ -81,7 +81,7 @@ const client = new Client({ server: "https://localhost:5000" }); // my-noon-serv
 
             <span>To fetch all todo items from the 'todos' collection using the noonjs client, use the following
                 command. Need more details on <nuxt-link
-                    to="/clients/js/crud/get/#paginated">pagination</nuxt-link>?</span>
+                    to="/docs/clients/js/collections/get">pagination</nuxt-link>?</span>
 
             <my-shiki code='const todos = await client.collection("todos").get();' />
 
