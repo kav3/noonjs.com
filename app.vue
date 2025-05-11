@@ -2,6 +2,9 @@
 const { $color } = useNuxtApp()
 const { public: { uri } } = useRuntimeConfig()
 useHead({
+   htmlAttrs: {
+    lang: "en"
+  },
   link: [
     {
       rel: 'canonical',
@@ -39,15 +42,16 @@ onMounted(() => {
             <nuxt-link to="/docs/getting-started" class="link">Docs</nuxt-link>
             <!-- <nuxt-link to="/blog" class="link">Blog</nuxt-link> -->
             <client-only>
-              <button @click="() => $color = $color === 'dark' ? 'light' : 'dark'" type="button" class="link">
+              <button @click="() => $color = $color === 'dark' ? 'light' : 'dark'" type="button" class="link"
+                aria-label="Toggle dark/light mode">
                 <icon-light v-if="$color === 'light'" />
                 <icon-dark v-else />
               </button>
             </client-only>
-            <nuxt-link to="/translations" class="link">
+            <nuxt-link to="/translations" class="link" aria-label="change language">
               <icon-translation />
             </nuxt-link>
-            <nuxt-link to="https://github.com/noonjs" target="_blank" class="link">
+            <nuxt-link to="https://github.com/noonjs" target="_blank" class="link" aria-label="noonjs's github">
               <icon-github />
             </nuxt-link>
           </span>
@@ -122,7 +126,7 @@ svg {
 }
 
 .btn.primary {
-  @apply text-white bg-sky-500 hover:bg-sky-600
+  @apply text-white bg-sky-700 hover:bg-sky-600
 }
 
 .btn.gray {
